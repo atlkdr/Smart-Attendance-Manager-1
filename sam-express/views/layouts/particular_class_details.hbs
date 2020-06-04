@@ -1,31 +1,101 @@
-<h1>Class: {{class}}</h1>
-<h3>Course: {{course}}</h3>
-<section class="instructors">
-	<h3>Instructors</h3>
-	<ul>
-		{{# each instructors }}
-			<li>{{ this.msg }}</li>
-		{{/each}}
-	</ul>
-</section>
-<section class="tas">
-	<h3>TAs</h3>
-	<ul>
-		{{# each tas }}
-			<li>{{ this.msg }}</li>
-		{{/each}}
-	</ul>
-</section>
-<section class="students">
-	<h3>Students</h3>
-	<ul>
-		{{# each students }}
-			<li>{{ this.msg }}</li>
-		{{/each}}
-	</ul>
-</section>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Perfect - Responsive HTML5 Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
 
 
-<form action="get_class_details_redirect" method="get">
-	<button type="submit">Back</button>
-</form>
+
+
+<div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+                            <h2><span>Class Details</span></h2>
+                        </div>
+                        <h2>Class: {{class}}</h2>
+                        <h2>Course: {{course}}</h2>
+            </div>
+                </div>
+        </div>
+           </div>
+        </div>
+<div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+					<section class="instructors">
+						<h3>Instructors</h3>
+						<ul>
+							{{# each instructors }}
+								<li>{{ this.msg }}</li>
+							{{/each}}
+						</ul>
+					</section>
+					<section class="tas">
+						<h3>TAs</h3>
+						<ul>
+							{{# each tas }}
+								<li>{{ this.msg }}</li>
+							{{/each}}
+						</ul>
+					</section>
+					<section class="students">
+						<h3>Students</h3>
+						<ul>
+							{{# each students }}
+								<li>{{ this.msg }}</li>
+							{{/each}}
+						</ul>
+					</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section layout_padding contact_section" style="background:#f6f6f6;">
+        <div class="container">
+               <div class="row">
+				 <div class="col-lg-4 col-md-4 col-sm-12">
+				    <div class="contact_form">
+
+				    	<!-- FORM YAHA SE HAI -->
+					    
+					    <form action="get_class_details_redirect" method="post">
+						   <fieldset>
+							   <div class="full field">
+							      <div class="center"><button type="submit">Back</button>
+							   </div>
+						   </fieldset>
+						</form>
+
+					</div>
+                 </div>
+               </div>			  
+           </div>
+        </div>

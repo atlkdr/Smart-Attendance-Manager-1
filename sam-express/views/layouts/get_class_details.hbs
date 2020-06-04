@@ -1,11 +1,70 @@
-<section class="classes">
-	<ul>
-		{{# each classes }}
-			<li><a href="http://localhost:8000/get_particular_class_details?class_info_id={{this.msg}}">{{ this.msg }}</a></li>
-		{{/each}}
-	</ul>
-</section>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<form action="/" method="get">
-	<button type="submit">Home</button>
-</form>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Perfect - Responsive HTML5 Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+{{# if errors }}
+	<section class="errors">
+		<ul>
+			{{# each errors }}
+				<li>{{ this.msg }}</li>
+			{{/each}}
+		</ul>
+	</section>
+{{/if}}
+
+<div class="section layout_padding contact_section" style="background:#f6f6f6;">
+        <div class="container">
+               <div class="row">
+                 <div class="col-lg-8 col-md-8 col-sm-12">
+				    <div class="full float-right_img">
+                        <img src="images/img10.png" alt="#">
+                    </div>
+                 </div>
+				 <div class="col-lg-4 col-md-4 col-sm-12">
+				    <div class="contact_form">
+
+				    	<!-- FORM YAHA SE HAI -->
+					    <section class="classes">
+						<ul>
+							{{# each classes }}
+								<li><a href="http://localhost:8000/get_particular_class_details?class_info_id={{this.msg}}">{{ this.msg }}</a></li>
+							{{/each}}
+						</ul>
+						</section>
+						<form action="/" method="get">
+						   <fieldset>
+							   <div class="full field">
+							      <div class="center"><button type="submit">Home</button>
+							   </div>
+						   </fieldset>
+						</form>
+					</div>
+                 </div>
+               </div>			  
+           </div>
+        </div>
